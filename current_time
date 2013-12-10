@@ -1,0 +1,8 @@
+{if
+    '{current_time format="%H%i"}' >= '0600' AND
+    '{current_time format="%H%i"}' <= '1700'
+}
+<style>body { background: #fff; }</style>
+{if:else}
+<style>body { background: #222; }</style>
+{/if}
